@@ -15,7 +15,7 @@ let loginController = {
         const resultValidation = validationResult(req)
         // preguntamos si hay errores y si los hay los enviamos a la vista, junto con lo q venia en el body         
         if(!resultValidation.isEmpty()){
-            console.log("resultValidation:", JSON.stringify(resultValidation,null,4));
+            //console.log("resultValidation:", JSON.stringify(resultValidation,null,4));
             return res.render("login", { 
                 errors: resultValidation.mapped(),
                 oldData: req.body
